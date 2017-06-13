@@ -1,38 +1,73 @@
-<style type="text/css">
-    .navcontainer {
+<style >
+    nav {
         display: flex;
         flex-direction: row;
-        background-color: #1b3955;
-        height: 81px;
-        width: 100%;
-        border-bottom: 1px solid white;
     }
-    
-    img {
-        height: 81px;
+    .navcontainer {
+        display: flex;
+        align-items: center;
+        align-content: stretch;
+        background-color: #1b3955;
+        border-bottom: 1px solid white;
         width: 100%;
-        padding-left: 40px;
+        height: auto;
+        list-style-type: none;
     }
     
     .navlinks {
         display: flex;
-        background-color: orange;
+        flex-wrap: wrap;
+        align-content: stretch;
         margin-top: 10px;
         margin-left: 100px;
-        flex-direction: row;
-        height: 61px;
-        width: 50%;
+        width: 100%;
+        height: auto;
+    }
+    
+    nav-logo {
+        margin-left: 60px;
+    }
+    
+    .icon {
+        margin: 5px;
+    }
+    
+    a:hover {
+        color: #148c80;
+    }
+    
+    a {
+        color: #c1c7ca;
+    }
+    
+    a:link {
+        text-decoration: none;
     }
 </style>
+<nav>
+    <div class="navcontainer">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="UX Logo">
+            <a href="index.html"></a>
+        </div>
+        <div class="navlinks">
 
-<div class="navcontainer">
-    <div class="pagelogo">
-        <img src="/images/logo.png" alt="image of ux Atlantic logo"></img>
+            <div class="icon">
+                <img src="images/home-icon.png" alt="home icon">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="icon">
+                <img src="images/deal-icon.png" alt="home icon">
+                <a href="index.html">Travel Deals</a>
+            </div>
+            <div class="icon">
+                <img src="images/schedule-icon.png" alt="home icon">
+                <a href="index.html">Flight Schedule</a>
+            </div>
+            <div class="icon">
+                <img src="images/login-icon.png" alt="home icon">
+                <a href="index.html">Register/login</a>
+            </div>
+        </div>
     </div>
-    <div class="navlinks">
-        <div class="link1"></div>
-        <div class="link2"></div>
-        <div class="link3"></div>
-        <div class="link4"></div>
-    </div>
-</div>
+</nav>

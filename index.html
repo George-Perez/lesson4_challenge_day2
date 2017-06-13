@@ -2,9 +2,184 @@
 layout: default
 title: lesson4_challenge_day2
 ---
-
-<body>
+<style>
+    /** {
+        border: 1px solid red;
+    }*/
     
-    <h1>Main page</h1>
-</body>
-</html>
+    .searchbox {
+        display: flex;
+        flex-direction: column;
+        Background-color: #143853;
+        width: 400px;
+        height: 325px;
+        margin-top: 80px;
+        margin-left: 80px;
+        border-radius: 5px;
+    }
+    
+    .tab-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    /* Dispay settings for the icons in the search area */
+    
+    .icon1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .icon2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .icon3 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    /* background for each tab */
+    
+    .tab-background1 {
+        background-color: #0063b7;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 5px;
+    }
+    
+    .tab-background2 {
+        background-color: #148c80;
+        width: 100%;
+        height: auto;
+    }
+    
+    .tab-background3 {
+        background-color: #148c80;
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 5px
+    }
+    
+    a:hover {
+        color: #148c80;
+    }
+    
+    .search-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .box {
+        border-radius: 4px;
+        border: 2px solid white;
+        height: 50px;
+        width: 175px;
+        margin: 12px;
+        color: white;
+        box-sizing: border-box;
+        padding-top: 15px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    
+    .depart {
+        color: #7b8798;
+    }
+    
+    .arrive {
+        color: #7b8798;
+    }
+    
+    .passengers-list {
+        background-color: #163753;
+        height: 50px;
+        width: 70px;
+        border-radius: 4px;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .search-button {
+        background-color: #1769ba;
+        border-radius: 5px;
+        height: 35px;
+        width: 375px;
+        margin: 12px;
+        color: white;
+        padding-top: 19px;
+        text-align: center;
+    }
+    
+    span {
+        padding: 15px;
+        color: white;
+    }
+    form{
+        justify-content: flex-start;
+        color: white;
+    }
+    form {
+        display: flex;
+        padding: 15px;
+        
+    }
+</style>
+<div class="searchbox">
+    <div class="tab-container">
+        <div class="tab-background1">
+            <div class="icon1">
+                <img src="images/plane-icon.png" alt="plane icon">
+            </div>
+        </div>
+        <div class="tab-background2">
+            <div class="icon2">
+                <img src="images/hotel-icon.png" alt="plane icon">
+            </div>
+        </div>
+        <div class="tab-background3">
+            <div class="icon3">
+                <img src="images/car-icon.png" alt="plane icon">
+            </div>
+        </div>
+    </div>
+    <div class="search-data">
+        <div class="column1">
+            <div class="box depart">Depart</div>
+            <div class="box date">mm/dd/yyyy</div>
+            <span>Passengers</span>
+            <select name="passengers" class="passengers-list">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="column2">
+            <div class="box arrive">Arrive</div>
+            <div class="box date">mm/dd/yyyy</div>
+            <div class="radio-button">
+            <form action="">
+                <input type="radio" name="trip-type" value="Return" checked> Return<br>
+                <input type="radio" name="trip-type" value="One Way">One Way<br>
+            </div>    
+        </div>
+    </div>
+
+    <div class="search-button">Search Flights</div>
+</div>
